@@ -1,33 +1,33 @@
-# from datetime import datetime
+from datetime import datetime
 
 
-# def get_days_from_today(date):
+def get_days_from_today(date):
   
-#     try:
-#         input_date = datetime.strptime(date, "%Y.%m.%d")
-#         current_date = datetime.today()
-#         diff_days = current_date - input_date
-#         return (f"Days difference: {diff_days.days}")
-#     except ValueError:
-#         print ('Please add the date in format: Year.Month.Day')
+    try:
+        input_date = datetime.strptime(date, "%Y.%m.%d")
+        current_date = datetime.today()
+        diff_days = current_date - input_date
+        return (f"Days difference: {diff_days.days}")
+    except ValueError:
+        print ('Please add the date in format: Year.Month.Day')
       
 
 
-# print (get_days_from_today('2020.10.09'))
+print (get_days_from_today('2020.10.09'))
 
 
 #_______________________
 
 
-# from random import randint, sample
-# def get_numbers_ticket(min, max, quantity):
-#        lottery_numbers = set()
-#        while len(lottery_numbers) != quantity:
-#             lottery_numbers.add(randint(min, max))
-#             return sorted(sample(range(min, max), quantity))
+from random import randint, sample
+def get_numbers_ticket(min, max, quantity):
+       lottery_numbers = set()
+       while len(lottery_numbers) != quantity:
+            lottery_numbers.add(randint(min, max))
+            return sorted(sample(range(min, max), quantity))
 
 
-# print(f"Ваші лотерейні числа: {get_numbers_ticket(1, 49, 6)}")
+print(f"Ваші лотерейні числа: {get_numbers_ticket(1, 49, 6)}")
 
 
 #_______________________
